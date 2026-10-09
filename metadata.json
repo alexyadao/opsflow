@@ -1,0 +1,6 @@
+{
+  "name": "OpsFlow",
+  "description": "Enterprise IT Helpdesk & Infrastructure Ticketing System featuring real-time ticket management, asset directory, and telemetry logs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
