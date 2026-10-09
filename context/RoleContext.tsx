@@ -60,7 +60,7 @@ export function RoleProvider({ children }: { children: React.ReactNode }) {
         // Ignore
       }
     }
-    return 'admin';
+    return 'employee';
   });
 
   const setRole = (newRole: UserRole) => {

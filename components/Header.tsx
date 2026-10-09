@@ -38,7 +38,7 @@ export default function Header({
   const { role, currentUser, toggleRole, isAdmin } = useRole();
   const mounted = useMounted();
 
-  const effectiveIsAdmin = mounted ? isAdmin : true;
+  const effectiveIsAdmin = mounted ? isAdmin : false;
 
   const tabTitles: Record<NavTab, { title: string; subtitle: string; trail: string }> = {
     dashboard: {

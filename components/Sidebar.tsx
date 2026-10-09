@@ -51,13 +51,13 @@ export default function Sidebar({
   const mounted = useMounted();
 
   // Use a stable baseline during SSR until client is mounted to prevent hydration mismatches
-  const effectiveIsAdmin = mounted ? isAdmin : true;
-  const effectiveRoleTitle = mounted ? currentUser.roleTitle : 'Lead SysAdmin';
-  const effectiveName = mounted ? currentUser.name : 'Alex Yadao';
-  const effectiveInitials = mounted ? currentUser.initials : 'AY';
+  const effectiveIsAdmin = mounted ? isAdmin : false;
+  const effectiveRoleTitle = mounted ? currentUser.roleTitle : 'Employee (Requester)';
+  const effectiveName = mounted ? currentUser.name : 'Taylor Morgan';
+  const effectiveInitials = mounted ? currentUser.initials : 'TM';
   const effectiveGradient = mounted
     ? currentUser.avatarGradient
-    : 'from-blue-700 via-indigo-600 to-slate-900';
+    : 'from-violet-600 via-purple-600 to-indigo-900';
 
   // Admin navigation items
   const adminNavItems = [
